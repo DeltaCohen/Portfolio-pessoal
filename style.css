@@ -1,0 +1,165 @@
+
+/* Estilo geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+/* Cabeçalho e menu */
+header {
+  background-color: #0077cc;
+  padding: 15px 0;
+  margin-bottom: 30px;
+}
+/* personalização do nav */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+/* personalização do nav a */
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+/* personalização do nav a quando o mouse passar por cima(hover) */
+nav a:hover {
+  color: #bbbbbb;
+}
+
+/* Conteúdo principal da pagina*/
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+section h1 {
+  margin-bottom: 20px;
+  color: #222222;
+  font-size: 28px;
+}
+
+section h2 {
+  margin-top: 20px;
+  color: #2d2d2d;
+  font-size: 22px;
+}
+
+ul {
+  margin-top: 10px;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+a {
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+input, textarea {
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Rodapé da pagina*/
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* Responsividade básica para o site*/
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main {
+    padding: 20px;
+  }
+}
+
+/* Estilo da seção 'Sobre Mim' */
+.sobre {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.sobre .foto img {
+  width: 250px;
+  height: 460px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 2px solid #0077cc;
+}
+
+.sobre .info {
+  flex: 1;
+}
+
+.sobre p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+/* Estilo do formulario */
+.formulario-contato form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-contato label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.formulario-contato input,
+.formulario-contato textarea {
+  width: 100%;
+  max-width: 600px;
+  font-size: 16px;
+}
+
+.formulario-contato button {
+  width: 150px;
+  padding: 10px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-contato button:hover {
+  background-color: #005fa3;
+}
